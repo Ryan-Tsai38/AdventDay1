@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 
-public class Attempt1 {
+public class Day1 {
 	static int[] first = new int[1000];
     static int[] second = new int[1000];
     static int total;
