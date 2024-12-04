@@ -15,7 +15,7 @@ public class Day3 {
 			int comma = 0;
 			int close;
 			int open;
-			 int prev = 0;
+			int prev = 0;
 			boolean check2 = true;
 
 			while ((next = (reader).readLine()) != null) {
@@ -37,7 +37,6 @@ public class Day3 {
 								&& check2) {
 							int first = Integer.parseInt(next.substring(open + 1, comma));
 							int second = Integer.parseInt(next.substring(comma + 1, close));
-							System.out.println(first + "  " + second);
 							if(check) {
 								total += (first * second);
 							}
@@ -66,7 +65,6 @@ public class Day3 {
 	public static boolean checkNext(String next, int start, int stop) {
 		for (int i = start; i < stop; i++) {
 			lmao = next.substring(i, i + 2);
-			System.out.println(lmao);
 			if (lmao.equals("do")) {
 				
 				lmao = next.substring(i, i + 4);
@@ -77,7 +75,6 @@ public class Day3 {
 						return false;
 					}
 				} else if (lmao.equals("do()")) {
-					System.out.println("1");
 					return true;
 				}
 			}
